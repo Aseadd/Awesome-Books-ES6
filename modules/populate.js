@@ -1,6 +1,6 @@
-import { collect } from './collect.js';
+import { Collect } from './collect.js';
 const populateStorage = () => {
-  const coll = new Collection();
+  const coll = new Collect();
   localStorage.setItem(
     'bookCollection',
     JSON.stringify({ bookColl: coll.books })

@@ -1,4 +1,4 @@
-import { populateStorage } from './populate';
+import { populateStorage } from './populate.js';
 
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
