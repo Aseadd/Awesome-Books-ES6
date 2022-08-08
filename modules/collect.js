@@ -1,4 +1,4 @@
-import { populateStorage } from './populate.js';
+//import { populateStorage } from './populate.js';
 
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
@@ -13,7 +13,7 @@ class Collect {
     this.books.push(data);
     this.display(data);
     this.remove();
-    populateStorage();
+    this.populateStorage();
     inputAuthor.value = '';
     inputTitle.value = '';
   }
@@ -42,7 +42,14 @@ class Collect {
     this.books = this.books.filter(
       (item) => item.title + item.author !== arr[0] + arr[1]
     );
-    populateStorage();
+    this.populateStorage();
+  };
+
+  populateStorage = () => {
+    localStorage.setItem(
+      'bookCollection',
+      JSON.stringify({ bookColl: this.books })
+    );
   };
 }
 export { Collect };
