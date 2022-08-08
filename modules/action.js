@@ -1,5 +1,5 @@
-import { Book } from './book.js';
-import { Collect } from './collect.js';
+import * as Book from './book.js';
+import * as Collect from './collect.js';
 const retrievebook = () => {
   const coll = new Collect();
   if (localStorage.getItem('bookCollection')) {
