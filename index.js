@@ -44,7 +44,6 @@ navContact.addEventListener('click', (evt) => {
 });
 
 const coll = new Collect();
-const bo = new Book();
 if (localStorage.getItem('bookCollection')) {
   const localBooks = JSON.parse(localStorage.getItem('bookCollection'));
   localBooks.bookColl.forEach((element) => {

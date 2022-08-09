@@ -36,7 +36,6 @@ class Collect {
   };
 
   removeFromColl = (data) => {
-    //const coll = new collection();
     const arr = data.getAttribute('data-value').split('-');
     this.books = this.books.filter(
       (item) => item.title + item.author !== arr[0] + arr[1]
@@ -51,4 +50,4 @@ class Collect {
     );
   };
 }
-export { Collect };
+export default { Collect };
