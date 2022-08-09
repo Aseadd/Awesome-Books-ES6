@@ -1,0 +1,144 @@
+body {
+  width: 100%;
+  margin: 5px auto 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  justify-content: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.books {
+  border: 3px solid rgb(0, 0, 0);
+  width: 40vw;
+}
+
+.book-wraper {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0.3rem;
+}
+
+.book-wraper:nth-child(odd) {
+  background-color: rgb(214, 208, 208);
+}
+
+.book-wraper:nth-child(even) {
+  background-color: white;
+}
+
+.remove-button {
+  align-self: center;
+  margin-left: auto;
+  height: auto;
+}
+
+button {
+  border: 1px solid;
+  box-shadow: 3px 3px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.book-wraper h3 {
+  font-size: 1rem;
+}
+
+.add-btn {
+  margin-left: auto;
+}
+
+.div-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 25vw;
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+input {
+  width: 30vw;
+  height: 1rem;
+  border: 3px solid rgb(0, 0, 0);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.nav-menu {
+  margin: 5px 10px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+  gap: 1.5rem;
+  border: 3px solid black;
+  height: 30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-list > li {
+  list-style: none;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu-list > li > a:hover {
+  color: red;
+}
+
+.menu-list > li > a:active {
+  color: blue;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 10px;
+}
+
+.toggle {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 90vw;
+  background-color: #fff;
+  padding: 0.3rem 1rem;
+  margin: 1rem;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.copyright {
+  font-weight: bold;
+}
+
+.logo-list {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: auto;
+}

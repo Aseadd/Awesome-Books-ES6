@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script type='module' src="index.js" ></script>
+  <title>Awesome books</title>
+</head>
+
+<body>
+  <header>
+    <nav class='nav-menu'>
+      <ul class='menu-list'>
+        <li class='logo-list'><a href="index.html" class='logo'>Awesome Books</a></li>
+        <li id='list'><a href="/" id='list-nav'>List</a></li>
+        <li id='add-new'><a href="" id='add-nav'> Add New </a></li>
+        <li id='contact'><a href="" id='cont-nav'> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="date"></div>
+  </header>
+  <section class="books-section">
+    <h1>All awesome books</h1>
+    <div class="books">
+    </div>
+  </section>
+
+  <section class="add-books toggle">
+    <h2>Add a new book</h2>
+    <form class='container'>
+      <input type="text" name="title" id="title" placeholder="Title" required>
+      <input type="text" name="author" id="author" placeholder="Author" required>
+      <button type="button" class="add-btn">Add</button>
+      <p></p>
+    </form>
+  </section>
+  <section class="contact-section toggle">
+    <h2 class="contact-heading">Contact Information</h2>
+    <p class="contact-text">Do have any question or just want to say "Hello"?<br />You can reach out to us!</p>
+    <ul class="contact-list">
+      <li>Addis Tsega (betsega23@gmail.com)</li>
+      <li>Camilo Vela (camilo.vela.galindo@gmail.com)</li>
+      <li>Matias Aguirre (aguirremati09@gmail.com)</li>
+    </ul>
+  </section>
+  <footer id="copyright" class=""><span class='copyright'>Copyright©</span> - Addis Tsega - Camilo Vela - Matias Aguirre
+  </footer>
+</body>
