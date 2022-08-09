@@ -1,8 +1,11 @@
 /* eslint-disable max-classes-per-file */
-import * as Collect from './modules/collect.js';
-import * as Book from './modules/book.js';
+import { Collect } from './modules/collect.js';
+import { Book } from './modules/book.js';
 import { DateTime } from './luxon.js';
 
+const inputTitle = document.getElementById('title');
+const inputAuthor = document.getElementById('author');
+const submitBtn = document.querySelector('.add-btn');
 const navAdd = document.querySelector('#add-new');
 const navList = document.querySelector('#list');
 const navContact = document.querySelector('#contact');
@@ -38,6 +41,18 @@ navContact.addEventListener('click', (evt) => {
   document.getElementById('cont-nav').style.color = 'blue';
   document.getElementById('list-nav').style.color = 'black';
   document.getElementById('add-nav').style.color = 'black';
+});
+
+const coll = new Collect();
+const bo = new Book();
+if (localStorage.getItem('bookCollection')) {
+  const localBooks = JSON.parse(localStorage.getItem('bookCollection'));
+  localBooks.bookColl.forEach((element) => {
+    coll.add(new Book(element.title, element.author));
+  });
+}
+submitBtn.addEventListener('click', () => {
+  coll.add(new Book(inputTitle.value, inputAuthor.value));
 });
 
 const todayDate = DateTime.now();
