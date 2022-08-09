@@ -1,5 +1,6 @@
 import * as Book from './book.js';
 import * as Collect from './collect.js';
+
 const retrievebook = () => {
   const coll = new Collect();
   if (localStorage.getItem('bookCollection')) {
@@ -10,4 +11,4 @@ const retrievebook = () => {
   }
 };
 
-export { retrievebook };
+export default { retrievebook };

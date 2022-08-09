@@ -1,9 +1,8 @@
+/* eslint-disable max-classes-per-file */
 import * as Collect from './modules/collect.js';
 import * as Book from './modules/book.js';
-//import { retrievebook } from './modules/action.js';
-Book;
-Collect;
 import { DateTime } from './luxon.js';
+
 const navAdd = document.querySelector('#add-new');
 const navList = document.querySelector('#list');
 const navContact = document.querySelector('#contact');

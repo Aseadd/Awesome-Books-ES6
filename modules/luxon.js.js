@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 // these aren't really private, but nor are they really useful to document
 
 /**

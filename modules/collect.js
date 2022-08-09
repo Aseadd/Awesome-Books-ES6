@@ -1,5 +1,5 @@
-//import { populateStorage } from './populate.js';
 import { Book } from './book.js';
+
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
 const submitBtn = document.querySelector('.add-btn');
