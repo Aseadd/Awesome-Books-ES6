@@ -1,6 +1,6 @@
 /* eslint-disable max-classes-per-file */
-import { Collect } from './modules/collect.js';
-import { Book } from './modules/book.js';
+import Collect from './modules/collect.js';
+import Book from './modules/book.js';
 import { DateTime } from './luxon.js';
 
 const inputTitle = document.getElementById('title');

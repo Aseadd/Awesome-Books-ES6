@@ -1,5 +1,3 @@
-import { Book } from './book.js';
-
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
 const bookSection = document.querySelector('.books');
@@ -50,4 +48,4 @@ class Collect {
     );
   };
 }
-export default { Collect };
+export default Collect;

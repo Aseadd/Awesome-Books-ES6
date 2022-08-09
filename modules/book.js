@@ -4,4 +4,4 @@ class Book {
     this.author = author;
   }
 }
-export default { Book };
+export default Book;
